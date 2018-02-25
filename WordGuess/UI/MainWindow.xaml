@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="180" Margin="168,63,0,0" VerticalAlignment="Top" Width="174" Source="Images/eventx.png"/>
     </Grid>
 </Window>
