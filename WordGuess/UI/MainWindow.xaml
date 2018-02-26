@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="873.6" Width="1524.8" Background="White" Foreground="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="180" Margin="168,63,0,0" VerticalAlignment="Top" Width="174" Source="Images/eventx.png"/>
+        <Image Margin="100,60,100,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top"/>
+        <TextBox Margin="174.4,446.05,1300.4,377.55" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox Height="50" Margin="260.2,446.05,1214.6,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="345.4,446.05,1129.4,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="445,446.05,1029.8,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="562.4,446.05,912.4,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="683.8,446.05,791,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="776.8,446.05,698,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="891.4,446.05,583.4,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="1014.2,446.05,460.6,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox Height="50" Margin="1157.6,446.05,317.2,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
     </Grid>
 </Window>
