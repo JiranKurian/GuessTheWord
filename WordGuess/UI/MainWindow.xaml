@@ -1,22 +1,64 @@
-﻿<Window x:Class="UI.MainWindow"
+﻿<Window x:Name="MainWindow1" x:Class="UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="873.6" Width="1524.8" Background="White" Foreground="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
-    <Grid>
-        <Image Margin="100,60,100,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top"/>
-        <TextBox Margin="174.4,446.05,1300.4,377.55" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox Height="50" Margin="260.2,446.05,1214.6,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="345.4,446.05,1129.4,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="445,446.05,1029.8,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="562.4,446.05,912.4,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="683.8,446.05,791,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="776.8,446.05,698,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="891.4,446.05,583.4,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="1014.2,446.05,460.6,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <TextBox Height="50" Margin="1157.6,446.05,317.2,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-    </Grid>
+        Title="MainWindow" Height="870" Width="1500" Background="White" Foreground="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+    <Border x:Name="MainBorder" BorderBrush="Red" BorderThickness="10">
+        <Grid x:Name="MainGrid">
+            <Image x:Name="Logo" Margin="550,30,550,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1" Margin="185,600,1245,0" TextWrapping="Wrap" Text="A" Height="50" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="50" FontSize="36"/>
+            <TextBox x:Name="_2" Height="50" Margin="305,600,1125,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_3" Height="50" Margin="425,600,1005,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_4" Height="50" Margin="545,600,885,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_5" Height="50" Margin="665,600,765,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_6" Height="50" Margin="785,600,645,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_7" Height="50" Margin="905,600,525,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_8" Height="50" Margin="1025,600,405,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_9" Height="50" Margin="1145,600,285,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <TextBox x:Name="_10" Height="50" Margin="1265,600,165,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36"/>
+            <StackPanel x:Name="AlphabetPanel" Margin="92,740,92,0" VerticalAlignment="Top" Orientation="Horizontal">
+                <TextBox x:Name="A" Height="50" TextWrapping="Wrap" Text="A" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="B" Height="50" TextWrapping="Wrap" Text="B" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="C" Height="50" TextWrapping="Wrap" Text="C" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="D" Height="50" TextWrapping="Wrap" Text="D" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="E" Height="50" TextWrapping="Wrap" Text="E" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="F" Height="50" TextWrapping="Wrap" Text="F" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="G" Height="50" TextWrapping="Wrap" Text="G" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="H" Height="50" TextWrapping="Wrap" Text="H" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="I" Height="50" TextWrapping="Wrap" Text="I" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="J" Height="50" TextWrapping="Wrap" Text="J" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="K" Height="50" TextWrapping="Wrap" Text="K" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="L" Height="50" TextWrapping="Wrap" Text="L" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="M" Height="50" TextWrapping="Wrap" Text="M" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="N" Height="50" TextWrapping="Wrap" Text="N" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="O" Height="50" TextWrapping="Wrap" Text="O" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="P" Height="50" TextWrapping="Wrap" Text="P" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="Q" Height="50" TextWrapping="Wrap" Text="Q" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="R" Height="50" TextWrapping="Wrap" Text="R" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="S" Height="50" TextWrapping="Wrap" Text="S" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="T" Height="50" TextWrapping="Wrap" Text="T" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="U" Height="50" TextWrapping="Wrap" Text="U" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="V" Height="50" TextWrapping="Wrap" Text="V" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="W" Height="50" TextWrapping="Wrap" Text="W" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="X" Height="50" TextWrapping="Wrap" Text="X" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="Y" Height="50" TextWrapping="Wrap" Text="Y" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+                <TextBox x:Name="Z" Height="50" TextWrapping="Wrap" Text="Z" Width="50" MaxLength="1" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="26" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Margin="369.8,420.84,0,0" VerticalAlignment="Top" Orientation="Horizontal" Background="#FFEDB6B6" Height="39.16">
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+                <Button Content="Button" Width="75"/>
+            </StackPanel>
+        </Grid>
+    </Border>
 </Window>
