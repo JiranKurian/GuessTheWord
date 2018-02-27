@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -68,6 +69,7 @@ namespace UI
                 Blue.Opacity = 1;
                 Red.Opacity = 1;
                 OnGoing = 1;
+                Ongoing2 = 1;
 
                 Clue.Text = "Choose a question";
                 QuestionPanel.Visibility = Visibility.Visible;
@@ -102,6 +104,7 @@ namespace UI
                 Red.Opacity = 1;
                 Blue.Opacity = 1;
                 OnGoing = 1;
+                Ongoing2 = 1;
 
                 Clue.Text = "Choose a question";
                 QuestionPanel.Visibility = Visibility.Visible;
@@ -1108,6 +1111,18 @@ namespace UI
 
         private void Winner()
         {
+            Storyboard storyboard = FindResource("WinnerAnimaion") as Storyboard;
+            storyboard.Begin();
+            Fun_LogoEvent();
+        }
+
+        async Task Fun_LogoEvent()
+        {
+            await Task.Run(() =>
+            {
+                Thread.Sleep(4500);
+            });
+
             Clue.Text = "Winner";
             QuestionPanel.Visibility = Visibility.Hidden;
             AlphabetPanel.Visibility = Visibility.Hidden;

@@ -64,6 +64,33 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="WinnerAnimaion">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="WinnerGrid">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.9" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.3" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.4" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WinnerGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Grid x:Name="MainGrid">
         <Image x:Name="Logo" Margin="550,30,550,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top" RenderOptions.BitmapScalingMode="Fant" MouseDown="Logo_MouseDown"/>
@@ -116,7 +143,7 @@
             <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
             <Button x:Name="Q10" Content="10" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q10_Click" MouseEnter="Q10_MouseEnter" MouseLeave="Q10_MouseLeave"/>
         </StackPanel>
-        <Grid x:Name="GuessGrid" Height="50" Margin="0,600,0,0" VerticalAlignment="Top" Visibility="Hidden">
+        <Grid x:Name="GuessGrid" Height="50" Margin="0,600,0,0" VerticalAlignment="Top">
             <TextBox x:Name="_1" Margin="185,0,0,0" TextWrapping="Wrap" Height="50" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
             <TextBox x:Name="_2" Height="50" Margin="305,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
             <TextBox x:Name="_3" Height="50" Margin="425,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
@@ -133,5 +160,6 @@
         <Image x:Name="Red" HorizontalAlignment="Right" Height="500" Margin="0,1.5,0,0" VerticalAlignment="Top" Width="400" Source="Images/Red.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Red_MouseDown" MouseEnter="Red_MouseEnter" MouseLeave="Red_MouseLeave" Opacity="0.5"/>
         <Button x:Name="Close" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" Height="50" Background="White" BorderBrush="{x:Null}" BorderThickness="0" FontSize="20" FontFamily="Arial Black" Margin="0,1.5,1.167,0" Click="Close_Click" Style="{DynamicResource ButtonStyle}" MouseEnter="Close_MouseEnter" MouseLeave="Close_MouseLeave"/>
         <Grid x:Name="GR" Background="#FFE74C3C" Opacity="0" Visibility="Hidden"/>
+        <Grid x:Name="WinnerGrid" HorizontalAlignment="Left" Height="50" Margin="92,600,0,0" VerticalAlignment="Top" Width="1316" Background="#FF1ED71E" Opacity="0" Visibility="Hidden"/>
     </Grid>
 </Window>
