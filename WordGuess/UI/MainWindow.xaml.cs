@@ -22,6 +22,21 @@ namespace UI
     public partial class MainWindow : Window
     {
         string Word = string.Empty;
+        int OnGoing = 0;
+        int QS = 0;
+        int Active;
+
+        int VQ1 = 0;
+        int VQ2 = 0;
+        int VQ3 = 0;
+        int VQ4 = 0;
+        int VQ5 = 0;
+        int VQ6 = 0;
+        int VQ7 = 0;
+        int VQ8 = 0;
+        int VQ9 = 0;
+        int VQ10 = 0;
+
 
         public MainWindow()
         {
@@ -35,37 +50,79 @@ namespace UI
 
         private void Logo_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            if (OnGoing == 0) 
+            {
+                Blue.Opacity = .5;
+                Red.Opacity = .5;
+                Blue.Visibility = Visibility.Visible;
+                Red.Visibility = Visibility.Visible;
+            }
         }
 
         private void Blue_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            if (OnGoing == 0)
+            {
+                Red.Visibility = Visibility.Hidden;
+                Blue.Opacity = 1;
+                OnGoing = 1;
 
+                Clue.Text = "Choose a question";
+                QuestionPanel.Visibility = Visibility.Visible;
+
+                Active = 1;
+            }
         }
 
         private void Blue_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            if (OnGoing == 0)
+            {
+                Blue.Opacity = 1;
+                Mouse.OverrideCursor = Cursors.Hand;
+            }
         }
 
         private void Blue_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            if (OnGoing == 0)
+            {
+                Blue.Opacity = .5;
+            }
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Red_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            if (OnGoing == 0)
+            {
+                Blue.Visibility = Visibility.Hidden;
+                Red.Opacity = 1;
+                OnGoing = 1;
 
+                Clue.Text = "Choose a question";
+                QuestionPanel.Visibility = Visibility.Visible;
+
+                Active = 0;
+            }
         }
 
         private void Red_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            if (OnGoing == 0)
+            {
+                Red.Opacity = 1;
+                Mouse.OverrideCursor = Cursors.Hand;
+            }
         }
 
         private void Red_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            if (OnGoing == 0)
+            {
+                Red.Opacity = .5;
+            }
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Close_MouseEnter(object sender, MouseEventArgs e)
@@ -80,162 +137,342 @@ namespace UI
 
         private void Q1_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W1"].ToString();
-            Clue.Text= Settings.Default["C1"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W1"].ToString();
+                Clue.Text = Settings.Default["C1"].ToString();
+
+                Q1.Opacity = .5;
+                Q1.IsEnabled = false;
+                VQ1 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q1_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0) 
+            {
 
+            }
         }
 
         private void Q1_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q2_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W2"].ToString();
-            Clue.Text = Settings.Default["C2"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W2"].ToString();
+                Clue.Text = Settings.Default["C2"].ToString();
+
+                Q2.Opacity = .5;
+                Q2.IsEnabled = false;
+                VQ2 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q2_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q2_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q3_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W3"].ToString();
-            Clue.Text = Settings.Default["C3"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W3"].ToString();
+                Clue.Text = Settings.Default["C3"].ToString();
+
+                Q3.Opacity = .5;
+                Q3.IsEnabled = false;
+                VQ3 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q3_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q3_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q4_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W4"].ToString();
-            Clue.Text = Settings.Default["C4"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W4"].ToString();
+                Clue.Text = Settings.Default["C4"].ToString();
+
+                Q4.Opacity = .5;
+                Q4.IsEnabled = false;
+                VQ4 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q4_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q4_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q5_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W5"].ToString();
-            Clue.Text = Settings.Default["C5"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W5"].ToString();
+                Clue.Text = Settings.Default["C5"].ToString();
+
+                Q5.Opacity = .5;
+                Q5.IsEnabled = false;
+                VQ5 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q5_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q5_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q6_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W6"].ToString();
-            Clue.Text = Settings.Default["C6"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W6"].ToString();
+                Clue.Text = Settings.Default["C6"].ToString();
+
+                Q6.Opacity = .5;
+                Q6.IsEnabled = false;
+                VQ6 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q6_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q6_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q7_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W7"].ToString();
-            Clue.Text = Settings.Default["C7"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W7"].ToString();
+                Clue.Text = Settings.Default["C7"].ToString();
+
+                Q7.Opacity = .5;
+                Q7.IsEnabled = false;
+                VQ7 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q7_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q7_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q8_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W8"].ToString();
-            Clue.Text = Settings.Default["C8"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W8"].ToString();
+                Clue.Text = Settings.Default["C8"].ToString();
+
+                Q8.Opacity = .5;
+                Q8.IsEnabled = false;
+                VQ8 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q8_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q8_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q9_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W9"].ToString();
-            Clue.Text = Settings.Default["C9"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W9"].ToString();
+                Clue.Text = Settings.Default["C9"].ToString();
+
+                Q9.Opacity = .5;
+                Q9.IsEnabled = false;
+                VQ9 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q9_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q9_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q10_Click(object sender, RoutedEventArgs e)
         {
-            Word = Settings.Default["W10"].ToString();
-            Clue.Text = Settings.Default["C10"].ToString();
+            if (QS == 0)
+            {
+                Word = Settings.Default["W10"].ToString();
+                Clue.Text = Settings.Default["C10"].ToString();
+
+                Q10.Opacity = .5;
+                Q10.IsEnabled = false;
+                VQ10 = 1;
+
+                AlphabetPanel.Visibility = Visibility.Visible;
+                GuessGrid.Visibility = Visibility.Visible;
+
+                QS = 1;
+            }
         }
 
         private void Q10_MouseEnter(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void Q10_MouseLeave(object sender, MouseEventArgs e)
         {
+            if (VQ1 == 0)
+            {
 
+            }
         }
 
         private void A_Click(object sender, RoutedEventArgs e)
