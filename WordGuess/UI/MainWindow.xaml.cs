@@ -130,11 +130,15 @@ namespace UI
 
         private void Close_MouseEnter(object sender, MouseEventArgs e)
         {
+            Close.Foreground = Brushes.Red;
+            Mouse.OverrideCursor = Cursors.Hand;
 
         }
 
         private void Close_MouseLeave(object sender, MouseEventArgs e)
         {
+            Close.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
 
         }
 
@@ -159,16 +163,22 @@ namespace UI
 
         private void Q1_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0) 
+            if (VQ1 == 0)
             {
 
-            }
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q1.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                    }
         }
 
         private void Q1_MouseLeave(object sender, MouseEventArgs e)
         {
             if (VQ1 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q1.Foreground = Brushes.Black;
+                Q1.Background = Brushes.White;
 
             }
         }
@@ -194,17 +204,22 @@ namespace UI
 
         private void Q2_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ2 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q2.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q2.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
 
             }
         }
 
         private void Q2_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ2 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q2.Foreground = Brushes.Black;
+                Q2.Background = Brushes.White;
             }
         }
 
@@ -229,17 +244,22 @@ namespace UI
 
         private void Q3_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ3 == 0)
+                
             {
-
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q3.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q3.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
             }
         }
 
         private void Q3_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ3 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q3.Foreground = Brushes.Black;
+                Q3.Background = Brushes.White;
             }
         }
 
@@ -264,17 +284,22 @@ namespace UI
 
         private void Q4_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ4 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q4.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q4.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
 
             }
         }
 
         private void Q4_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ4 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q4.Foreground = Brushes.Black;
+                Q4.Background = Brushes.White;
             }
         }
 
@@ -299,7 +324,10 @@ namespace UI
 
         private void Q5_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ5 == 0)
+                Mouse.OverrideCursor = Cursors.Hand;
+            Q5.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            Q5.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
             {
 
             }
@@ -307,9 +335,11 @@ namespace UI
 
         private void Q5_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ5 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q5.Foreground = Brushes.Black;
+                Q5.Background = Brushes.White;
             }
         }
 
@@ -334,17 +364,22 @@ namespace UI
 
         private void Q6_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ6 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q6.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q6.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
 
             }
         }
 
         private void Q6_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ6 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q6.Foreground = Brushes.Black;
+                Q6.Background = Brushes.White;
             }
         }
 
@@ -369,17 +404,22 @@ namespace UI
 
         private void Q7_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ7 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q7.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q7.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
 
             }
         }
 
         private void Q7_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ7 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q7.Foreground = Brushes.Black;
+                Q7.Background = Brushes.White;
             }
         }
 
@@ -404,17 +444,22 @@ namespace UI
 
         private void Q8_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ8 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q8.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q8.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
 
             }
         }
 
         private void Q8_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ8 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q8.Foreground = Brushes.Black;
+                Q8.Background = Brushes.White;
             }
         }
 
@@ -439,17 +484,21 @@ namespace UI
 
         private void Q9_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ9 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q9.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q9.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
             }
         }
 
         private void Q9_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ9 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q9.Foreground = Brushes.Black;
+                Q9.Background = Brushes.White;
             }
         }
 
@@ -474,16 +523,21 @@ namespace UI
 
         private void Q10_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ10 == 0)
             {
-
+                Mouse.OverrideCursor = Cursors.Hand;
+                Q10.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q10.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
             }
         }
 
         private void Q10_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (VQ1 == 0)
+            if (VQ10 == 0)
             {
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q10.Foreground = Brushes.Black;
+                Q10.Background = Brushes.White;
 
             }
         }
@@ -497,12 +551,12 @@ namespace UI
 
         private void A_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            A.Foreground = Brushes.Crimson;
         }
 
         private void A_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            A.Foreground = Brushes.Black;
         }
 
         private void B_Click(object sender, RoutedEventArgs e)
@@ -514,12 +568,12 @@ namespace UI
 
         private void B_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            B.Foreground = Brushes.Crimson;
         }
 
         private void B_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            B.Foreground = Brushes.Black;
         }
 
         private void C_Click(object sender, RoutedEventArgs e)
@@ -531,12 +585,12 @@ namespace UI
 
         private void C_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            C.Foreground = Brushes.Crimson;
         }
 
         private void C_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            C.Foreground = Brushes.Black;
         }
 
         private void D_Click(object sender, RoutedEventArgs e)
@@ -548,12 +602,12 @@ namespace UI
 
         private void D_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            D.Foreground = Brushes.Crimson;
         }
 
         private void D_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            D.Foreground = Brushes.Black;
         }
 
         private void E_Click(object sender, RoutedEventArgs e)
@@ -565,12 +619,12 @@ namespace UI
 
         private void E_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            E.Foreground = Brushes.Crimson;
         }
 
         private void E_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            E.Foreground = Brushes.Black;
         }
 
         private void F_Click(object sender, RoutedEventArgs e)
@@ -582,12 +636,12 @@ namespace UI
 
         private void F_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            F.Foreground = Brushes.Crimson;
         }
 
         private void F_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            F.Foreground = Brushes.Black;
         }
 
         private void G_Click(object sender, RoutedEventArgs e)
@@ -599,12 +653,12 @@ namespace UI
 
         private void G_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            G.Foreground = Brushes.Crimson;
         }
 
         private void G_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            G.Foreground = Brushes.Black;
         }
 
         private void H_Click(object sender, RoutedEventArgs e)
@@ -616,12 +670,12 @@ namespace UI
 
         private void H_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            H.Foreground = Brushes.Crimson;
         }
 
         private void H_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            H.Foreground = Brushes.Black;
         }
 
         private void I_Click(object sender, RoutedEventArgs e)
@@ -633,12 +687,12 @@ namespace UI
 
         private void I_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            I.Foreground = Brushes.Crimson;
         }
 
         private void I_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            I.Foreground = Brushes.Black;
         }
 
         private void J_Click(object sender, RoutedEventArgs e)
@@ -650,12 +704,12 @@ namespace UI
 
         private void J_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            J.Foreground = Brushes.Crimson;
         }
 
         private void J_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            J.Foreground = Brushes.Black;
         }
 
         private void K_Click(object sender, RoutedEventArgs e)
@@ -667,12 +721,12 @@ namespace UI
 
         private void K_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            K.Foreground = Brushes.Crimson;
         }
 
         private void K_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            K.Foreground = Brushes.Black;
         }
 
         private void L_Click(object sender, RoutedEventArgs e)
@@ -684,12 +738,12 @@ namespace UI
 
         private void L_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            L.Foreground = Brushes.Crimson;
         }
 
         private void L_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            L.Foreground = Brushes.Black;
         }
 
         private void M_Click(object sender, RoutedEventArgs e)
@@ -701,12 +755,12 @@ namespace UI
 
         private void M_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            M.Foreground = Brushes.Crimson;
         }
 
         private void M_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            M.Foreground = Brushes.Black;
         }
 
         private void N_Click(object sender, RoutedEventArgs e)
@@ -718,12 +772,12 @@ namespace UI
 
         private void N_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            N.Foreground = Brushes.Crimson;
         }
 
         private void N_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            N.Foreground = Brushes.Black;
         }
 
         private void O_Click(object sender, RoutedEventArgs e)
@@ -735,12 +789,12 @@ namespace UI
 
         private void O_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            O.Foreground = Brushes.Crimson;
         }
 
         private void O_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            O.Foreground = Brushes.Black;
         }
 
         private void P_Click(object sender, RoutedEventArgs e)
@@ -752,12 +806,12 @@ namespace UI
 
         private void P_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            P.Foreground = Brushes.Crimson;
         }
 
         private void P_MouseLeave(object sender, MouseEventArgs e)
         {
-
+           P.Foreground = Brushes.Black;
         }
 
         private void Q_Click(object sender, RoutedEventArgs e)
@@ -769,12 +823,12 @@ namespace UI
 
         private void Q_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            Q.Foreground = Brushes.Crimson;
         }
 
         private void Q_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            Q.Foreground = Brushes.Black;
         }
 
         private void R_Click(object sender, RoutedEventArgs e)
@@ -786,12 +840,12 @@ namespace UI
 
         private void R_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            R.Foreground = Brushes.Crimson;
         }
 
         private void R_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            R.Foreground = Brushes.Black;
         }
 
         private void S_Click(object sender, RoutedEventArgs e)
@@ -803,12 +857,12 @@ namespace UI
 
         private void S_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            S.Foreground = Brushes.Crimson;
         }
 
         private void S_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            S.Foreground = Brushes.Black;
         }
 
         private void T_Click(object sender, RoutedEventArgs e)
@@ -820,12 +874,12 @@ namespace UI
 
         private void T_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            T.Foreground = Brushes.Crimson;
         }
 
         private void T_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            T.Foreground = Brushes.Black;
         }
 
         private void U_Click(object sender, RoutedEventArgs e)
@@ -837,12 +891,12 @@ namespace UI
 
         private void U_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            U.Foreground = Brushes.Crimson;
         }
 
         private void U_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            U.Foreground = Brushes.Black;
         }
 
         private void V_Click(object sender, RoutedEventArgs e)
@@ -854,12 +908,12 @@ namespace UI
 
         private void V_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            V.Foreground = Brushes.Crimson;
         }
 
         private void V_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            V.Foreground = Brushes.Black;
         }
 
         private void W_Click(object sender, RoutedEventArgs e)
@@ -871,12 +925,12 @@ namespace UI
 
         private void W_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            W.Foreground = Brushes.Crimson;
         }
 
         private void W_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            W.Foreground = Brushes.Black;
         }
 
         private void X_Click(object sender, RoutedEventArgs e)
@@ -888,12 +942,12 @@ namespace UI
 
         private void X_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            X.Foreground = Brushes.Crimson;
         }
 
         private void X_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            X.Foreground = Brushes.Black;
         }
 
         private void Y_Click(object sender, RoutedEventArgs e)
@@ -905,12 +959,12 @@ namespace UI
 
         private void Y_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            Y.Foreground = Brushes.Crimson;
         }
 
         private void Y_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            Y.Foreground = Brushes.Black;
         }
 
         private void Z_Click(object sender, RoutedEventArgs e)
@@ -922,12 +976,12 @@ namespace UI
 
         private void Z_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            Z.Foreground = Brushes.Crimson;
         }
 
         private void Z_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            Z.Foreground = Brushes.Black;
         }
 
         private void AlphabetCheck(char alpha)
