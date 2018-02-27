@@ -25,7 +25,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("California")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Sarcophagy")]
         public string W1 {
             get {
                 return ((string)(this["W1"]));
@@ -37,7 +37,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Everything")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Zoophilist")]
         public string W2 {
             get {
                 return ((string)(this["W2"]));
@@ -49,7 +49,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Aboveboard")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Monography")]
         public string W3 {
             get {
                 return ((string)(this["W3"]));
@@ -61,7 +61,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Washington")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Loggerhead")]
         public string W4 {
             get {
                 return ((string)(this["W4"]));
@@ -73,7 +73,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Basketball")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Lithoglyph")]
         public string W5 {
             get {
                 return ((string)(this["W5"]));
@@ -85,7 +85,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Weathering")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Chromotype")]
         public string W6 {
             get {
                 return ((string)(this["W6"]));
@@ -97,7 +97,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Characters")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Cephalalgy")]
         public string W7 {
             get {
                 return ((string)(this["W7"]));
@@ -109,7 +109,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Literature")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Pantamorph")]
         public string W8 {
             get {
                 return ((string)(this["W8"]));
@@ -121,7 +121,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Perfection")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Smaragdite")]
         public string W9 {
             get {
                 return ((string)(this["W9"]));
@@ -133,7 +133,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Volleyball")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Spurgewort")]
         public string W10 {
             get {
                 return ((string)(this["W10"]));
@@ -145,7 +145,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Some Place in United States ")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : The practice of eating flesh")]
         public string C1 {
             get {
                 return ((string)(this["C1"]));
@@ -157,7 +157,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Something which represent all")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : A lover of animals")]
         public string C2 {
             get {
                 return ((string)(this["C2"]));
@@ -169,7 +169,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : I exactly don\'t know the meaning of this word")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Representation by lines without color")]
         public string C3 {
             get {
                 return ((string)(this["C3"]));
@@ -181,7 +181,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Some Place in United States ")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : A spherical mass of iron, with a long handle, used to heat tar")]
         public string C4 {
             get {
                 return ((string)(this["C4"]));
@@ -193,7 +193,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : This is one of the fameous game")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : An engraving on a gem")]
         public string C5 {
             get {
                 return ((string)(this["C5"]));
@@ -205,7 +205,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : What kind of word is that")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : A photographic picture in the natural colors")]
         public string C6 {
             get {
                 return ((string)(this["C6"]));
@@ -217,7 +217,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : When charector is lost every thing is lost")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Pain in the head; headache")]
         public string C7 {
             get {
                 return ((string)(this["C7"]));
@@ -229,7 +229,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : This thing needs lots of experience")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : That which assumes, or exists in, all forms")]
         public string C8 {
             get {
                 return ((string)(this["C8"]));
@@ -241,7 +241,8 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : I like this word very much")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : A green foliated kind of amphibole, observed in eclogite and some varietis" +
+            " of gabbro")]
         public string C9 {
             get {
                 return ((string)(this["C9"]));
@@ -253,7 +254,7 @@ namespace UI.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Clue : The Truth is I don\'t like this game very much ")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Any euphorbiaceous plant")]
         public string C10 {
             get {
                 return ((string)(this["C10"]));

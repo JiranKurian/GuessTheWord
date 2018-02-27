@@ -3,64 +3,64 @@
   <Profiles />
   <Settings>
     <Setting Name="W1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">California</Value>
+      <Value Profile="(Default)">Sarcophagy</Value>
     </Setting>
     <Setting Name="W2" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Everything</Value>
+      <Value Profile="(Default)">Zoophilist</Value>
     </Setting>
     <Setting Name="W3" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Aboveboard</Value>
+      <Value Profile="(Default)">Monography</Value>
     </Setting>
     <Setting Name="W4" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Washington</Value>
+      <Value Profile="(Default)">Loggerhead</Value>
     </Setting>
     <Setting Name="W5" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Basketball</Value>
+      <Value Profile="(Default)">Lithoglyph</Value>
     </Setting>
     <Setting Name="W6" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Weathering</Value>
+      <Value Profile="(Default)">Chromotype</Value>
     </Setting>
     <Setting Name="W7" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Characters</Value>
+      <Value Profile="(Default)">Cephalalgy</Value>
     </Setting>
     <Setting Name="W8" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Literature</Value>
+      <Value Profile="(Default)">Pantamorph</Value>
     </Setting>
     <Setting Name="W9" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Perfection</Value>
+      <Value Profile="(Default)">Smaragdite</Value>
     </Setting>
     <Setting Name="W10" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Volleyball</Value>
+      <Value Profile="(Default)">Spurgewort</Value>
     </Setting>
     <Setting Name="C1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : Some Place in United States </Value>
+      <Value Profile="(Default)">Clue : The practice of eating flesh</Value>
     </Setting>
     <Setting Name="C2" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : Something which represent all</Value>
+      <Value Profile="(Default)">Clue : A lover of animals</Value>
     </Setting>
     <Setting Name="C3" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : I exactly don't know the meaning of this word</Value>
+      <Value Profile="(Default)">Clue : Representation by lines without color</Value>
     </Setting>
     <Setting Name="C4" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : Some Place in United States </Value>
+      <Value Profile="(Default)">Clue : A spherical mass of iron, with a long handle, used to heat tar</Value>
     </Setting>
     <Setting Name="C5" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : This is one of the fameous game</Value>
+      <Value Profile="(Default)">Clue : An engraving on a gem</Value>
     </Setting>
     <Setting Name="C6" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : What kind of word is that</Value>
+      <Value Profile="(Default)">Clue : A photographic picture in the natural colors</Value>
     </Setting>
     <Setting Name="C7" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : When charector is lost every thing is lost</Value>
+      <Value Profile="(Default)">Clue : Pain in the head; headache</Value>
     </Setting>
     <Setting Name="C8" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : This thing needs lots of experience</Value>
+      <Value Profile="(Default)">Clue : That which assumes, or exists in, all forms</Value>
     </Setting>
     <Setting Name="C9" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : I like this word very much</Value>
+      <Value Profile="(Default)">Clue : A green foliated kind of amphibole, observed in eclogite and some varietis of gabbro</Value>
     </Setting>
     <Setting Name="C10" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Clue : The Truth is I don't like this game very much </Value>
+      <Value Profile="(Default)">Clue : Any euphorbiaceous plant</Value>
     </Setting>
   </Settings>
 </SettingsFile>
