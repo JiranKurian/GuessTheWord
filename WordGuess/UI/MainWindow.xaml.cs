@@ -237,5 +237,395 @@ namespace UI
         {
 
         }
+
+        private void A_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void A_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void A_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void B_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void B_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void B_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void C_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void C_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void C_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void D_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void D_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void D_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void E_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void E_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void E_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void F_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void F_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void F_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void G_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void G_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void G_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void H_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void H_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void H_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void I_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void I_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void I_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void J_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void J_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void J_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void K_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void K_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void K_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void L_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void L_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void L_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void M_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void M_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void M_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void N_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void N_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void N_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void O_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void O_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void O_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void P_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void P_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void P_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void R_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void R_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void R_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void S_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void S_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void S_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void T_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void T_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void T_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void U_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void U_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void U_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void V_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void V_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void V_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void W_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void W_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void W_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void X_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void X_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Y_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Y_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Y_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Z_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Z_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Z_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
