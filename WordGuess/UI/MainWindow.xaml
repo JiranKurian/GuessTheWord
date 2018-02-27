@@ -49,6 +49,21 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Storyboard x:Key="WrongAnimation">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GR">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="GR">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Grid x:Name="MainGrid">
         <Image x:Name="Logo" Margin="550,30,550,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top" RenderOptions.BitmapScalingMode="Fant" MouseDown="Logo_MouseDown"/>
@@ -114,9 +129,9 @@
             <TextBox x:Name="_10" Height="50" Margin="1265,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
         </Grid>
         <TextBox x:Name="Clue" Height="130" Margin="100,440,100,0" TextWrapping="Wrap" Text="Welcome&#xD;&#xA;Choose the first team" VerticalAlignment="Top" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="#FF505050" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Width="900" BorderThickness="0" FontStyle="Italic" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+        <Image x:Name="Blue" HorizontalAlignment="Left" Height="500" Margin="0,1.5,0,0" VerticalAlignment="Top" Width="400" Source="Images/Blue.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Blue_MouseDown" MouseEnter="Blue_MouseEnter" MouseLeave="Blue_MouseLeave" Opacity="0.5"/>
+        <Image x:Name="Red" HorizontalAlignment="Right" Height="500" Margin="0,1.5,0,0" VerticalAlignment="Top" Width="400" Source="Images/Red.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Red_MouseDown" MouseEnter="Red_MouseEnter" MouseLeave="Red_MouseLeave" Opacity="0.5"/>
         <Button x:Name="Close" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" Height="50" Background="White" BorderBrush="{x:Null}" BorderThickness="0" FontSize="20" FontFamily="Arial Black" Margin="0,1.5,1.167,0" Click="Close_Click" Style="{DynamicResource ButtonStyle}" MouseEnter="Close_MouseEnter" MouseLeave="Close_MouseLeave"/>
-        <Grid x:Name="GR" Background="#FFE74C3C" Visibility="Hidden"/>
-        <Image x:Name="Blue" HorizontalAlignment="Left" Height="369.2" Margin="40,122,0,0" VerticalAlignment="Top" Width="227" Source="Images/Blue.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Blue_MouseDown" MouseEnter="Blue_MouseEnter" MouseLeave="Blue_MouseLeave" Opacity="0.5"/>
-        <Image x:Name="Red" HorizontalAlignment="Right" Height="369.2" Margin="0,122,40,0" VerticalAlignment="Top" Width="227" Source="Images/Red.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Red_MouseDown" MouseEnter="Red_MouseEnter" MouseLeave="Red_MouseLeave" Opacity="0.5"/>
+        <Grid x:Name="GR" Background="#FFE74C3C" Opacity="0" Visibility="Hidden"/>
     </Grid>
 </Window>

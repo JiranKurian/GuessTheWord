@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -23,8 +24,11 @@ namespace UI
     {
         string Word = string.Empty;
         int OnGoing = 0;
+        int Ongoing2 = 0;
         int QS = 0;
-        int Active;
+        int finalcount = 0;
+        int Active;  // 1-Blue and 0-Red
+        int check = 0;
 
         int VQ1 = 0;
         int VQ2 = 0;
@@ -41,6 +45,8 @@ namespace UI
         public MainWindow()
         {
             InitializeComponent();
+            Gif.Position = new TimeSpan(0, 0, 1);
+            Gif.Play();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
@@ -50,12 +56,9 @@ namespace UI
 
         private void Logo_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (OnGoing == 0) 
+            if (Ongoing2 == 0) 
             {
-                Blue.Opacity = .5;
-                Red.Opacity = .5;
-                Blue.Visibility = Visibility.Visible;
-                Red.Visibility = Visibility.Visible;
+                Reset();
             }
         }
 
@@ -65,6 +68,7 @@ namespace UI
             {
                 Red.Visibility = Visibility.Hidden;
                 Blue.Opacity = 1;
+                Red.Opacity = 1;
                 OnGoing = 1;
 
                 Clue.Text = "Choose a question";
@@ -98,6 +102,7 @@ namespace UI
             {
                 Blue.Visibility = Visibility.Hidden;
                 Red.Opacity = 1;
+                Blue.Opacity = 1;
                 OnGoing = 1;
 
                 Clue.Text = "Choose a question";
@@ -140,6 +145,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W1"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C1"].ToString();
 
                 Q1.Opacity = .5;
@@ -174,6 +180,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W2"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C2"].ToString();
 
                 Q2.Opacity = .5;
@@ -208,6 +215,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W3"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C3"].ToString();
 
                 Q3.Opacity = .5;
@@ -242,6 +250,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W4"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C4"].ToString();
 
                 Q4.Opacity = .5;
@@ -276,6 +285,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W5"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C5"].ToString();
 
                 Q5.Opacity = .5;
@@ -310,6 +320,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W6"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C6"].ToString();
 
                 Q6.Opacity = .5;
@@ -344,6 +355,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W7"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C7"].ToString();
 
                 Q7.Opacity = .5;
@@ -378,6 +390,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W8"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C8"].ToString();
 
                 Q8.Opacity = .5;
@@ -412,6 +425,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W9"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C9"].ToString();
 
                 Q9.Opacity = .5;
@@ -446,6 +460,7 @@ namespace UI
             if (QS == 0)
             {
                 Word = Settings.Default["W10"].ToString();
+                Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C10"].ToString();
 
                 Q10.Opacity = .5;
@@ -476,8 +491,10 @@ namespace UI
         }
 
         private void A_Click(object sender, RoutedEventArgs e)
-        {
-
+        {           
+            AlphabetCheck('A');
+            A.Opacity = .3;
+            A.IsEnabled = false;
         }
 
         private void A_MouseEnter(object sender, MouseEventArgs e)
@@ -492,7 +509,9 @@ namespace UI
 
         private void B_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('B');
+            B.Opacity = .3;
+            B.IsEnabled = false;
         }
 
         private void B_MouseEnter(object sender, MouseEventArgs e)
@@ -507,7 +526,9 @@ namespace UI
 
         private void C_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('C');
+            C.Opacity = .3;
+            C.IsEnabled = false;
         }
 
         private void C_MouseEnter(object sender, MouseEventArgs e)
@@ -522,7 +543,9 @@ namespace UI
 
         private void D_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('D');
+            D.Opacity = .3;
+            D.IsEnabled = false;
         }
 
         private void D_MouseEnter(object sender, MouseEventArgs e)
@@ -537,7 +560,9 @@ namespace UI
 
         private void E_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('E');
+            E.Opacity = .3;
+            E.IsEnabled = false;
         }
 
         private void E_MouseEnter(object sender, MouseEventArgs e)
@@ -552,7 +577,9 @@ namespace UI
 
         private void F_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('F');
+            F.Opacity = .3;
+            F.IsEnabled = false;
         }
 
         private void F_MouseEnter(object sender, MouseEventArgs e)
@@ -567,7 +594,9 @@ namespace UI
 
         private void G_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('G');
+            G.Opacity = .3;
+            G.IsEnabled = false;
         }
 
         private void G_MouseEnter(object sender, MouseEventArgs e)
@@ -582,7 +611,9 @@ namespace UI
 
         private void H_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('H');
+            H.Opacity = .3;
+            H.IsEnabled = false;
         }
 
         private void H_MouseEnter(object sender, MouseEventArgs e)
@@ -597,7 +628,9 @@ namespace UI
 
         private void I_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('I');
+            I.Opacity = .3;
+            I.IsEnabled = false;
         }
 
         private void I_MouseEnter(object sender, MouseEventArgs e)
@@ -612,7 +645,9 @@ namespace UI
 
         private void J_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('J');
+            J.Opacity = .3;
+            J.IsEnabled = false;
         }
 
         private void J_MouseEnter(object sender, MouseEventArgs e)
@@ -627,7 +662,9 @@ namespace UI
 
         private void K_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('K');
+            K.Opacity = .3;
+            K.IsEnabled = false;
         }
 
         private void K_MouseEnter(object sender, MouseEventArgs e)
@@ -642,7 +679,9 @@ namespace UI
 
         private void L_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('L');
+            L.Opacity = .3;
+            L.IsEnabled = false;
         }
 
         private void L_MouseEnter(object sender, MouseEventArgs e)
@@ -657,7 +696,9 @@ namespace UI
 
         private void M_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('M');
+            M.Opacity = .3;
+            M.IsEnabled = false;
         }
 
         private void M_MouseEnter(object sender, MouseEventArgs e)
@@ -672,7 +713,9 @@ namespace UI
 
         private void N_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('N');
+            N.Opacity = .3;
+            N.IsEnabled = false;
         }
 
         private void N_MouseEnter(object sender, MouseEventArgs e)
@@ -687,7 +730,9 @@ namespace UI
 
         private void O_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('O');
+            O.Opacity = .3;
+            O.IsEnabled = false;
         }
 
         private void O_MouseEnter(object sender, MouseEventArgs e)
@@ -702,7 +747,9 @@ namespace UI
 
         private void P_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('P');
+            P.Opacity = .3;
+            P.IsEnabled = false;
         }
 
         private void P_MouseEnter(object sender, MouseEventArgs e)
@@ -717,7 +764,9 @@ namespace UI
 
         private void Q_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('Q');
+            Q.Opacity = .3;
+            Q.IsEnabled = false;
         }
 
         private void Q_MouseEnter(object sender, MouseEventArgs e)
@@ -732,7 +781,9 @@ namespace UI
 
         private void R_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('R');
+            R.Opacity = .3;
+            R.IsEnabled = false;
         }
 
         private void R_MouseEnter(object sender, MouseEventArgs e)
@@ -747,7 +798,9 @@ namespace UI
 
         private void S_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('S');
+            S.Opacity = .3;
+            S.IsEnabled = false;
         }
 
         private void S_MouseEnter(object sender, MouseEventArgs e)
@@ -762,7 +815,9 @@ namespace UI
 
         private void T_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('T');
+            T.Opacity = .3;
+            T.IsEnabled = false;
         }
 
         private void T_MouseEnter(object sender, MouseEventArgs e)
@@ -777,7 +832,9 @@ namespace UI
 
         private void U_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('U');
+            U.Opacity = .3;
+            U.IsEnabled = false;
         }
 
         private void U_MouseEnter(object sender, MouseEventArgs e)
@@ -792,7 +849,9 @@ namespace UI
 
         private void V_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('V');
+            V.Opacity = .3;
+            V.IsEnabled = false;
         }
 
         private void V_MouseEnter(object sender, MouseEventArgs e)
@@ -807,7 +866,9 @@ namespace UI
 
         private void W_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('W');
+            W.Opacity = .3;
+            W.IsEnabled = false;
         }
 
         private void W_MouseEnter(object sender, MouseEventArgs e)
@@ -822,7 +883,9 @@ namespace UI
 
         private void X_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('X');
+            X.Opacity = .3;
+            X.IsEnabled = false;
         }
 
         private void X_MouseEnter(object sender, MouseEventArgs e)
@@ -837,7 +900,9 @@ namespace UI
 
         private void Y_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('Y');
+            Y.Opacity = .3;
+            Y.IsEnabled = false;
         }
 
         private void Y_MouseEnter(object sender, MouseEventArgs e)
@@ -852,7 +917,9 @@ namespace UI
 
         private void Z_Click(object sender, RoutedEventArgs e)
         {
-
+            AlphabetCheck('Z');
+            Z.Opacity = .3;
+            Z.IsEnabled = false;
         }
 
         private void Z_MouseEnter(object sender, MouseEventArgs e)
@@ -863,6 +930,262 @@ namespace UI
         private void Z_MouseLeave(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void AlphabetCheck(char alpha)
+        {
+            int count = 0;
+            int temp = 0;
+            char[] array = Word.ToCharArray();
+            foreach(char a in array)
+            {
+                ++count;
+                if (a == alpha)
+                {
+                    switch (count)
+                    {
+                        case 1:
+                            if(String.IsNullOrEmpty(_1.Text))
+                            {
+                                _1.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 2:
+                            if (String.IsNullOrEmpty(_2.Text))
+                            {
+                                _2.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 3:
+                            if (String.IsNullOrEmpty(_3.Text))
+                            {
+                                _3.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 4:
+                            if (String.IsNullOrEmpty(_4.Text))
+                            {
+                                _4.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 5:
+                            if (String.IsNullOrEmpty(_5.Text))
+                            {
+                                _5.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 6:
+                            if (String.IsNullOrEmpty(_6.Text))
+                            {
+                                _6.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 7:
+                            if (String.IsNullOrEmpty(_7.Text))
+                            {
+                                _7.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 8:
+                            if (String.IsNullOrEmpty(_8.Text))
+                            {
+                                _8.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 9:
+                            if (String.IsNullOrEmpty(_9.Text))
+                            {
+                                _9.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;
+
+                        case 10:
+                            if (String.IsNullOrEmpty(_10.Text))
+                            {
+                                _10.Text = alpha.ToString();
+                                ++finalcount;
+                                check = 1;
+                            }
+                            break;                         
+                    }
+                }
+            }
+            if (finalcount==10)
+            {
+                Winner();
+            }
+            Check();
+        }
+
+        private void Check()
+        {
+            if(check==0)
+            {
+                Storyboard storyboard = FindResource("WrongAnimation") as Storyboard;
+                storyboard.Begin();
+                Swap();
+            }
+            check = 0;
+        }
+
+        private void Winner()
+        {
+            Clue.Text = "Winner";
+            QuestionPanel.Visibility = Visibility.Hidden;
+            AlphabetPanel.Visibility = Visibility.Hidden;
+            GuessGrid.Visibility = Visibility.Hidden;
+            Ongoing2 = 0;
+        }
+
+        private void Swap()
+        {
+            if (Active == 1)
+            {
+                Active = 0;
+                Blue.Visibility = Visibility.Hidden;
+                Red.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Active = 1;
+                Blue.Visibility = Visibility.Visible;
+                Red.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void Reset()
+        {
+            _1.Clear();
+            _2.Clear();
+            _3.Clear();
+            _4.Clear();
+            _5.Clear();
+            _6.Clear();
+            _7.Clear();
+            _8.Clear();
+            _9.Clear();
+            _10.Clear();
+
+            Word = string.Empty;
+
+            Blue.Opacity = .5;
+            Red.Opacity = .5;
+            Blue.Visibility = Visibility.Visible;
+            Red.Visibility = Visibility.Visible;
+
+            Clue.Text = "Welcome\nChoose the first team";
+
+            QS = 0;
+            finalcount = 0;
+            check = 0;
+
+            OnGoing = 0;
+
+            A.Opacity = 1;
+            A.IsEnabled = true;
+
+            B.Opacity = 1;
+            B.IsEnabled = true;
+
+            C.Opacity = 1;
+            C.IsEnabled = true;
+
+            D.Opacity = 1;
+            D.IsEnabled = true;
+
+            E.Opacity = 1;
+            E.IsEnabled = true;
+
+            F.Opacity = 1;
+            F.IsEnabled = true;
+
+
+            G.Opacity = 1;
+            G.IsEnabled = true;
+
+            H.Opacity = 1;
+            H.IsEnabled = true;
+
+            I.Opacity = 1;
+            I.IsEnabled = true;
+
+            J.Opacity = 1;
+            J.IsEnabled = true;
+
+            K.Opacity = 1;
+            K.IsEnabled = true;
+
+            L.Opacity = 1;
+            L.IsEnabled = true;
+
+            M.Opacity = 1;
+            M.IsEnabled = true;
+
+            N.Opacity = 1;
+            N.IsEnabled = true;
+
+
+            O.Opacity = 1;
+            O.IsEnabled = true;
+
+            P.Opacity = 1;
+            P.IsEnabled = true;
+
+            Q.Opacity = 1;
+            Q.IsEnabled = true;
+
+            R.Opacity = 1;
+            R.IsEnabled = true;
+
+            S.Opacity = 1;
+            S.IsEnabled = true;
+
+            T.Opacity = 1;
+            T.IsEnabled = true;
+
+            U.Opacity = 1;
+            U.IsEnabled = true;
+
+            V.Opacity = 1;
+            V.IsEnabled = true;
+
+            W.Opacity = 1;
+            W.IsEnabled = true;
+
+            X.Opacity = 1;
+            X.IsEnabled = true;
+
+            Y.Opacity = 1;
+            Y.IsEnabled = true;
+
+            Z.Opacity = 1;
+            Z.IsEnabled = true;
         }
     }
 }
