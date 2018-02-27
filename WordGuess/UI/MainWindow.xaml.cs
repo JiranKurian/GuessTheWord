@@ -45,8 +45,6 @@ namespace UI
         public MainWindow()
         {
             InitializeComponent();
-            Gif.Position = new TimeSpan(0, 0, 1);
-            Gif.Play();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
