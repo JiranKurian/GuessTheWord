@@ -8,22 +8,258 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UI.Properties
-{
-
-
+namespace UI.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("California")]
+        public string W1 {
+            get {
+                return ((string)(this["W1"]));
+            }
+            set {
+                this["W1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Everything")]
+        public string W2 {
+            get {
+                return ((string)(this["W2"]));
+            }
+            set {
+                this["W2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Aboveboard")]
+        public string W3 {
+            get {
+                return ((string)(this["W3"]));
+            }
+            set {
+                this["W3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Washington")]
+        public string W4 {
+            get {
+                return ((string)(this["W4"]));
+            }
+            set {
+                this["W4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Basketball")]
+        public string W5 {
+            get {
+                return ((string)(this["W5"]));
+            }
+            set {
+                this["W5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Weathering")]
+        public string W6 {
+            get {
+                return ((string)(this["W6"]));
+            }
+            set {
+                this["W6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Characters")]
+        public string W7 {
+            get {
+                return ((string)(this["W7"]));
+            }
+            set {
+                this["W7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Literature")]
+        public string W8 {
+            get {
+                return ((string)(this["W8"]));
+            }
+            set {
+                this["W8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Perfection")]
+        public string W9 {
+            get {
+                return ((string)(this["W9"]));
+            }
+            set {
+                this["W9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Volleyball")]
+        public string W10 {
+            get {
+                return ((string)(this["W10"]));
+            }
+            set {
+                this["W10"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Some Place in United States ")]
+        public string C1 {
+            get {
+                return ((string)(this["C1"]));
+            }
+            set {
+                this["C1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Something which represent all")]
+        public string C2 {
+            get {
+                return ((string)(this["C2"]));
+            }
+            set {
+                this["C2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : I exactly don\'t know the meaning of this word")]
+        public string C3 {
+            get {
+                return ((string)(this["C3"]));
+            }
+            set {
+                this["C3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : Some Place in United States ")]
+        public string C4 {
+            get {
+                return ((string)(this["C4"]));
+            }
+            set {
+                this["C4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : This is one of the fameous game")]
+        public string C5 {
+            get {
+                return ((string)(this["C5"]));
+            }
+            set {
+                this["C5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : What kind of word is that")]
+        public string C6 {
+            get {
+                return ((string)(this["C6"]));
+            }
+            set {
+                this["C6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : When charector is lost every thing is lost")]
+        public string C7 {
+            get {
+                return ((string)(this["C7"]));
+            }
+            set {
+                this["C7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : This thing needs lots of experience")]
+        public string C8 {
+            get {
+                return ((string)(this["C8"]));
+            }
+            set {
+                this["C8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : I like this word very much")]
+        public string C9 {
+            get {
+                return ((string)(this["C9"]));
+            }
+            set {
+                this["C9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Clue : The Truth is I don\'t like this game very much ")]
+        public string C10 {
+            get {
+                return ((string)(this["C10"]));
+            }
+            set {
+                this["C10"] = value;
             }
         }
     }
