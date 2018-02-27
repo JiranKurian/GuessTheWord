@@ -29,5 +29,200 @@ namespace UI
         {
             Application.Current.Shutdown();
         }
+
+        private void Logo_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Blue_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Blue_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Blue_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Red_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Red_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Red_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Close_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Close_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q1_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q1_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q2_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q2_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q3_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q3_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q4_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q4_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q5_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q5_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q6_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q6_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q7_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q7_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q7_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q8_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q8_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q8_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q9_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q9_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q9_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q10_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Q10_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Q10_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

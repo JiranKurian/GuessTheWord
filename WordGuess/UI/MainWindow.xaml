@@ -6,71 +6,115 @@
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="870" Width="1500" Background="White" Foreground="{x:Null}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
-    <Grid x:Name="MainGrid">
-        <Image x:Name="Logo" Margin="550,30,550,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top"/>
-        <TextBox x:Name="_1" Margin="185,600,0,0" TextWrapping="Wrap" Text="A" Height="50" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_2" Height="50" Margin="305,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_3" Height="50" Margin="425,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_4" Height="50" Margin="545,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_5" Height="50" Margin="665,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_6" Height="50" Margin="785,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_7" Height="50" Margin="905,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_8" Height="50" Margin="1025,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_9" Height="50" Margin="1145,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <TextBox x:Name="_10" Height="50" Margin="1265,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left"/>
-        <StackPanel x:Name="AlphabetPanel" Margin="92,740,92,0" VerticalAlignment="Top" Orientation="Horizontal">
-            <Button x:Name="A" Content="A" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="B" Content="B" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="C" Content="C" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="D" Content="D" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="E" Content="E" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="F" Content="F" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="G" Content="G" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="H" Content="H" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="I" Content="I" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="J" Content="J" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="K" Content="K" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="L" Content="L" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="M" Content="M" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="N" Content="N" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="O" Content="O" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="P" Content="P" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="Q" Content="Q" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="R" Content="R" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="S" Content="S" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="T" Content="T" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="U" Content="U" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="V" Content="V" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="W" Content="W" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="X" Content="X" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="Y" Content="Y" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-            <Button x:Name="Z" Content="Z" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
-        </StackPanel>
-        <StackPanel x:Name="QuestionPanel" Margin="100,400,100,0" VerticalAlignment="Top" Orientation="Horizontal" Height="40" Width="413.5">
-            <Button x:Name="Q1" Content="1" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q2" Content="2" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q3" Content="3" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q4" Content="4" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q5" Content="5" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q6" Content="6" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q7" Content="7" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q8" Content="8" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q9" Content="9" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-            <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
-            <Button x:Name="Q10" Content="10" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16"/>
-        </StackPanel>
-        <TextBox x:Name="Clue" Height="130" Margin="100,440,100,0" TextWrapping="Wrap" Text="Clue : Lorem Ipsum is simply dummy text of the printing" VerticalAlignment="Top" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="#FF505050" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Width="900" BorderThickness="0" FontStyle="Italic"/>
-        <Button x:Name="Close" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" Height="50" Background="White" BorderBrush="{x:Null}" BorderThickness="0" FontSize="20" FontFamily="Arial Black" Margin="0,1.5,1.167,0" Click="Close_Click"/>
-        <Grid x:Name="GR" Background="#FFE74C3C" Visibility="Hidden"/>
-        <Image x:Name="Blue" HorizontalAlignment="Left" Height="369.2" Margin="44,156,0,0" VerticalAlignment="Top" Width="227" Source="Images/Blue.png"/>
-        <Image x:Name="Red" HorizontalAlignment="Left" Height="369.2" Margin="1273,129.6,0,0" VerticalAlignment="Top" Width="227" Source="Images/Blue.png"/>
-    </Grid>
+	<Window.Resources>
+		<Style x:Key="FocusVisual">
+			<Setter Property="Control.Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+		<SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+		<SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+		<SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+		<SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+		<SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+		<SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+		<SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+		<SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+		<Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+			<Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+			<Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+			<Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+			<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="HorizontalContentAlignment" Value="Center"/>
+			<Setter Property="VerticalContentAlignment" Value="Center"/>
+			<Setter Property="Padding" Value="1"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+							<ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsDefaulted" Value="true">
+								<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Resources>
+	<Grid x:Name="MainGrid">
+		<Image x:Name="Logo" Margin="550,30,550,0" Source="Images/eventx.png" Width="400" Height="400" VerticalAlignment="Top" RenderOptions.BitmapScalingMode="Fant" MouseDown="Logo_MouseDown"/>
+		<TextBox x:Name="_1" Margin="185,600,0,0" TextWrapping="Wrap" Text="A" Height="50" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_2" Height="50" Margin="305,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_3" Height="50" Margin="425,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_4" Height="50" Margin="545,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_5" Height="50" Margin="665,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_6" Height="50" Margin="785,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_7" Height="50" Margin="905,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_8" Height="50" Margin="1025,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_9" Height="50" Margin="1145,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<TextBox x:Name="_10" Height="50" Margin="1265,600,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<StackPanel x:Name="AlphabetPanel" Margin="92,740,92,0" VerticalAlignment="Top" Orientation="Horizontal">
+			<Button x:Name="A" Content="A" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="B" Content="B" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="C" Content="C" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="D" Content="D" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="E" Content="E" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="F" Content="F" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="G" Content="G" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="H" Content="H" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="I" Content="I" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="J" Content="J" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="K" Content="K" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="L" Content="L" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="M" Content="M" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="N" Content="N" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="O" Content="O" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="P" Content="P" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="Q" Content="Q" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="R" Content="R" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="S" Content="S" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="T" Content="T" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0" Style="{DynamicResource ButtonStyle}"/>
+			<Button x:Name="U" Content="U" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
+			<Button x:Name="V" Content="V" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
+			<Button x:Name="W" Content="W" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
+			<Button x:Name="X" Content="X" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
+			<Button x:Name="Y" Content="Y" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
+			<Button x:Name="Z" Content="Z" Width="50" Height="50" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="24" Padding="0"/>
+		</StackPanel>
+		<StackPanel x:Name="QuestionPanel" Margin="100,400,100,0" VerticalAlignment="Top" Orientation="Horizontal" Height="40" Width="413.5">
+			<Button x:Name="Q1" Content="1" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q1_Click" MouseEnter="Q1_MouseEnter" MouseLeave="Q1_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q2" Content="2" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q2_Click" MouseEnter="Q2_MouseEnter" MouseLeave="Q2_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q3" Content="3" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q3_Click" MouseEnter="Q3_MouseEnter" MouseLeave="Q3_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q4" Content="4" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q4_Click" MouseEnter="Q4_MouseEnter" MouseLeave="Q4_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q5" Content="5" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q5_Click" MouseEnter="Q5_MouseEnter" MouseLeave="Q5_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q6" Content="6" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q6_Click" MouseEnter="Q6_MouseEnter" MouseLeave="Q6_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q7" Content="7" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q7_Click" MouseEnter="Q7_MouseEnter" MouseLeave="Q7_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q8" Content="8" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q8_Click" MouseEnter="Q8_MouseEnter" MouseLeave="Q8_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q9" Content="9" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q9_Click" MouseEnter="Q9_MouseEnter" MouseLeave="Q9_MouseLeave"/>
+			<Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
+			<Button x:Name="Q10" Content="10" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q10_Click" MouseEnter="Q10_MouseEnter" MouseLeave="Q10_MouseLeave"/>
+		</StackPanel>
+		<TextBox x:Name="Clue" Height="130" Margin="100,440,100,0" TextWrapping="Wrap" Text="Clue : Lorem Ipsum is simply dummy text of the printing" VerticalAlignment="Top" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="#FF505050" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" Width="900" BorderThickness="0" FontStyle="Italic" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
+		<Button x:Name="Close" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" Height="50" Background="White" BorderBrush="{x:Null}" BorderThickness="0" FontSize="20" FontFamily="Arial Black" Margin="0,1.5,1.167,0" Click="Close_Click" Style="{DynamicResource ButtonStyle}" MouseEnter="Close_MouseEnter" MouseLeave="Close_MouseLeave"/>
+		<Grid x:Name="GR" Background="#FFE74C3C" Visibility="Hidden"/>
+		<Image x:Name="Blue" HorizontalAlignment="Left" Height="369.2" Margin="40,122,0,0" VerticalAlignment="Top" Width="227" Source="Images/Blue.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Blue_MouseDown" MouseEnter="Blue_MouseEnter" MouseLeave="Blue_MouseLeave"/>
+		<Image x:Name="Red" HorizontalAlignment="Right" Height="369.2" Margin="0,122,40,0" VerticalAlignment="Top" Width="227" Source="Images/Red.png" RenderOptions.BitmapScalingMode="Fant" MouseDown="Red_MouseDown" MouseEnter="Red_MouseEnter" MouseLeave="Red_MouseLeave"/>
+	</Grid>
 </Window>
