@@ -1,7 +1,66 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="W1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">California</Value>
+    </Setting>
+    <Setting Name="W2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Everything</Value>
+    </Setting>
+    <Setting Name="W3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Aboveboard</Value>
+    </Setting>
+    <Setting Name="W4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Washington</Value>
+    </Setting>
+    <Setting Name="W5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Basketball</Value>
+    </Setting>
+    <Setting Name="W6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Weathering</Value>
+    </Setting>
+    <Setting Name="W7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Characters</Value>
+    </Setting>
+    <Setting Name="W8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Literature</Value>
+    </Setting>
+    <Setting Name="W9" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Perfection</Value>
+    </Setting>
+    <Setting Name="W10" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Volleyball</Value>
+    </Setting>
+    <Setting Name="C1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : Some Place in United States </Value>
+    </Setting>
+    <Setting Name="C2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : Something which represent all</Value>
+    </Setting>
+    <Setting Name="C3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : I exactly don't know the meaning of this word</Value>
+    </Setting>
+    <Setting Name="C4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : Some Place in United States </Value>
+    </Setting>
+    <Setting Name="C5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : This is one of the fameous game</Value>
+    </Setting>
+    <Setting Name="C6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : What kind of word is that</Value>
+    </Setting>
+    <Setting Name="C7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : When charector is lost every thing is lost</Value>
+    </Setting>
+    <Setting Name="C8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : This thing needs lots of experience</Value>
+    </Setting>
+    <Setting Name="C9" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : I like this word very much</Value>
+    </Setting>
+    <Setting Name="C10" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Clue : The Truth is I don't like this game very much </Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
