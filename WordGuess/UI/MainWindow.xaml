@@ -143,7 +143,7 @@
             <Rectangle Fill="Black" Height="15" Width="1.5" StrokeThickness="0"/>
             <Button x:Name="Q10" Content="10" Width="40" Height="40" Background="White" BorderBrush="#FF505050" BorderThickness="0" FontSize="16" Style="{DynamicResource ButtonStyle}" Click="Q10_Click" MouseEnter="Q10_MouseEnter" MouseLeave="Q10_MouseLeave"/>
         </StackPanel>
-        <Grid x:Name="GuessGrid" Height="50" Margin="0,600,0,0" VerticalAlignment="Top">
+        <Grid x:Name="GuessGrid" Height="50" Margin="0,600,0,0" VerticalAlignment="Top" Visibility="Hidden">
             <TextBox x:Name="_1" Margin="185,0,0,0" TextWrapping="Wrap" Height="50" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
             <TextBox x:Name="_2" Height="50" Margin="305,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
             <TextBox x:Name="_3" Height="50" Margin="425,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0,0,0,5" SelectionBrush="{x:Null}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="50" FontSize="36" HorizontalAlignment="Left" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
