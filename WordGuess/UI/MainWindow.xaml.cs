@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using UI.Properties;
 
 namespace UI
@@ -55,7 +46,7 @@ namespace UI
 
         private void Logo_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (Ongoing2 == 0) 
+            if (Ongoing2 == 0)
             {
                 Reset();
             }
@@ -71,10 +62,12 @@ namespace UI
                 OnGoing = 1;
                 Ongoing2 = 1;
 
-                Clue.Text = "Choose a question";
+                Clue.Text = "Choose a hidden word";
                 QuestionPanel.Visibility = Visibility.Visible;
 
                 Active = 1;
+
+                QuestionPanel.IsEnabled = true;
             }
         }
 
@@ -106,10 +99,12 @@ namespace UI
                 OnGoing = 1;
                 Ongoing2 = 1;
 
-                Clue.Text = "Choose a question";
+                Clue.Text = "Choose a hidden word";
                 QuestionPanel.Visibility = Visibility.Visible;
 
                 Active = 0;
+
+                QuestionPanel.IsEnabled = true;
             }
         }
 
@@ -264,7 +259,7 @@ namespace UI
         private void Q3_MouseEnter(object sender, MouseEventArgs e)
         {
             if (VQ3 == 0)
-                
+
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q3.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
@@ -356,10 +351,10 @@ namespace UI
         private void Q5_MouseEnter(object sender, MouseEventArgs e)
         {
             if (VQ5 == 0)
-            { 
+            {
                 Mouse.OverrideCursor = Cursors.Hand;
-            Q5.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-            Q5.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
+                Q5.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                Q5.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -604,7 +599,7 @@ namespace UI
         }
 
         private void A_Click(object sender, RoutedEventArgs e)
-        {           
+        {
             AlphabetCheck('A');
             A.Opacity = .2;
             A.IsEnabled = false;
@@ -918,7 +913,7 @@ namespace UI
 
         private void P_MouseLeave(object sender, MouseEventArgs e)
         {
-           P.Foreground = Brushes.Black;
+            P.Foreground = Brushes.Black;
             Mouse.OverrideCursor = Cursors.Arrow;
         }
 
@@ -1126,7 +1121,7 @@ namespace UI
         {
             int count = 0;
             char[] array = Word.ToCharArray();
-            foreach(char a in array)
+            foreach (char a in array)
             {
                 ++count;
                 if (a == alpha)
@@ -1134,7 +1129,7 @@ namespace UI
                     switch (count)
                     {
                         case 1:
-                            if(String.IsNullOrEmpty(_1.Text))
+                            if (String.IsNullOrEmpty(_1.Text))
                             {
                                 _1.Text = alpha.ToString();
                                 ++finalcount;
@@ -1221,11 +1216,11 @@ namespace UI
                                 ++finalcount;
                                 check = 1;
                             }
-                            break;                         
+                            break;
                     }
                 }
             }
-            if (finalcount==10)
+            if (finalcount == 10)
             {
                 Winner();
             }
@@ -1234,7 +1229,7 @@ namespace UI
 
         private void Check()
         {
-            if(check==0)
+            if (check == 0)
             {
                 Storyboard storyboard = FindResource("WrongAnimation") as Storyboard;
                 storyboard.Begin();
