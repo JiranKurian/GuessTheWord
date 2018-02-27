@@ -153,7 +153,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C1"].ToString();
 
-                Q1.Opacity = .5;
+                Q1.Opacity = .2;
                 Q1.IsEnabled = false;
                 VQ1 = 1;
 
@@ -161,6 +161,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q1.Foreground = Brushes.Black;
+                Q1.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -168,11 +174,10 @@ namespace UI
         {
             if (VQ1 == 0)
             {
-
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q1.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
-                    }
+                Q1.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
+            }
         }
 
         private void Q1_MouseLeave(object sender, MouseEventArgs e)
@@ -182,7 +187,6 @@ namespace UI
                 Mouse.OverrideCursor = Cursors.Arrow;
                 Q1.Foreground = Brushes.Black;
                 Q1.Background = Brushes.White;
-
             }
         }
 
@@ -194,7 +198,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C2"].ToString();
 
-                Q2.Opacity = .5;
+                Q2.Opacity = .2;
                 Q2.IsEnabled = false;
                 VQ2 = 1;
 
@@ -202,6 +206,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q2.Foreground = Brushes.Black;
+                Q2.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -211,7 +221,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q2.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q2.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q2.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -234,7 +244,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C3"].ToString();
 
-                Q3.Opacity = .5;
+                Q3.Opacity = .2;
                 Q3.IsEnabled = false;
                 VQ3 = 1;
 
@@ -242,6 +252,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q3.Foreground = Brushes.Black;
+                Q3.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -252,7 +268,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q3.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q3.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q3.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
             }
         }
 
@@ -274,7 +290,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C4"].ToString();
 
-                Q4.Opacity = .5;
+                Q4.Opacity = .2;
                 Q4.IsEnabled = false;
                 VQ4 = 1;
 
@@ -282,6 +298,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q4.Foreground = Brushes.Black;
+                Q4.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -291,7 +313,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q4.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q4.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q4.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -314,7 +336,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C5"].ToString();
 
-                Q5.Opacity = .5;
+                Q5.Opacity = .2;
                 Q5.IsEnabled = false;
                 VQ5 = 1;
 
@@ -322,16 +344,22 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q5.Foreground = Brushes.Black;
+                Q5.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
         private void Q5_MouseEnter(object sender, MouseEventArgs e)
         {
             if (VQ5 == 0)
+            { 
                 Mouse.OverrideCursor = Cursors.Hand;
             Q5.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-            Q5.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
-            {
+            Q5.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -354,7 +382,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C6"].ToString();
 
-                Q6.Opacity = .5;
+                Q6.Opacity = .2;
                 Q6.IsEnabled = false;
                 VQ6 = 1;
 
@@ -362,6 +390,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q6.Foreground = Brushes.Black;
+                Q6.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -371,7 +405,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q6.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q6.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q6.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -394,7 +428,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C7"].ToString();
 
-                Q7.Opacity = .5;
+                Q7.Opacity = .2;
                 Q7.IsEnabled = false;
                 VQ7 = 1;
 
@@ -402,6 +436,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q7.Foreground = Brushes.Black;
+                Q7.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -411,7 +451,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q7.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q7.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q7.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -434,7 +474,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C8"].ToString();
 
-                Q8.Opacity = .5;
+                Q8.Opacity = .2;
                 Q8.IsEnabled = false;
                 VQ8 = 1;
 
@@ -442,6 +482,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q8.Foreground = Brushes.Black;
+                Q8.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -451,7 +497,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q8.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q8.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q8.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
 
             }
         }
@@ -474,7 +520,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C9"].ToString();
 
-                Q9.Opacity = .5;
+                Q9.Opacity = .2;
                 Q9.IsEnabled = false;
                 VQ9 = 1;
 
@@ -482,6 +528,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q9.Foreground = Brushes.Black;
+                Q9.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -491,7 +543,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q9.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q9.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q9.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
             }
         }
 
@@ -513,7 +565,7 @@ namespace UI
                 Word = Word.ToUpper();
                 Clue.Text = Settings.Default["C10"].ToString();
 
-                Q10.Opacity = .5;
+                Q10.Opacity = .2;
                 Q10.IsEnabled = false;
                 VQ10 = 1;
 
@@ -521,6 +573,12 @@ namespace UI
                 GuessGrid.Visibility = Visibility.Visible;
 
                 QS = 1;
+
+                Mouse.OverrideCursor = Cursors.Arrow;
+                Q10.Foreground = Brushes.Black;
+                Q10.Background = Brushes.White;
+
+                QuestionPanel.IsEnabled = false;
             }
         }
 
@@ -530,7 +588,7 @@ namespace UI
             {
                 Mouse.OverrideCursor = Cursors.Hand;
                 Q10.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                Q10.Background = new SolidColorBrush(Color.FromRgb(255, 80, 80));
+                Q10.Background = new SolidColorBrush(Color.FromRgb(200, 200, 200));
             }
         }
 
@@ -548,449 +606,525 @@ namespace UI
         private void A_Click(object sender, RoutedEventArgs e)
         {           
             AlphabetCheck('A');
-            A.Opacity = .3;
+            A.Opacity = .2;
             A.IsEnabled = false;
         }
 
         private void A_MouseEnter(object sender, MouseEventArgs e)
         {
             A.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void A_MouseLeave(object sender, MouseEventArgs e)
         {
             A.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void B_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('B');
-            B.Opacity = .3;
+            B.Opacity = .2;
             B.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void B_MouseEnter(object sender, MouseEventArgs e)
         {
             B.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void B_MouseLeave(object sender, MouseEventArgs e)
         {
             B.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void C_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('C');
-            C.Opacity = .3;
+            C.Opacity = .2;
             C.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void C_MouseEnter(object sender, MouseEventArgs e)
         {
             C.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void C_MouseLeave(object sender, MouseEventArgs e)
         {
             C.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void D_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('D');
-            D.Opacity = .3;
+            D.Opacity = .2;
             D.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void D_MouseEnter(object sender, MouseEventArgs e)
         {
             D.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void D_MouseLeave(object sender, MouseEventArgs e)
         {
             D.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void E_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('E');
-            E.Opacity = .3;
+            E.Opacity = .2;
             E.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void E_MouseEnter(object sender, MouseEventArgs e)
         {
             E.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void E_MouseLeave(object sender, MouseEventArgs e)
         {
             E.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void F_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('F');
-            F.Opacity = .3;
+            F.Opacity = .2;
             F.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void F_MouseEnter(object sender, MouseEventArgs e)
         {
             F.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void F_MouseLeave(object sender, MouseEventArgs e)
         {
             F.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void G_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('G');
-            G.Opacity = .3;
+            G.Opacity = .2;
             G.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void G_MouseEnter(object sender, MouseEventArgs e)
         {
             G.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void G_MouseLeave(object sender, MouseEventArgs e)
         {
             G.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void H_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('H');
-            H.Opacity = .3;
+            H.Opacity = .2;
             H.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void H_MouseEnter(object sender, MouseEventArgs e)
         {
             H.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void H_MouseLeave(object sender, MouseEventArgs e)
         {
             H.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void I_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('I');
-            I.Opacity = .3;
+            I.Opacity = .2;
             I.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void I_MouseEnter(object sender, MouseEventArgs e)
         {
             I.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void I_MouseLeave(object sender, MouseEventArgs e)
         {
             I.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void J_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('J');
-            J.Opacity = .3;
+            J.Opacity = .2;
             J.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void J_MouseEnter(object sender, MouseEventArgs e)
         {
             J.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void J_MouseLeave(object sender, MouseEventArgs e)
         {
             J.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void K_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('K');
-            K.Opacity = .3;
+            K.Opacity = .2;
             K.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void K_MouseEnter(object sender, MouseEventArgs e)
         {
             K.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void K_MouseLeave(object sender, MouseEventArgs e)
         {
             K.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void L_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('L');
-            L.Opacity = .3;
+            L.Opacity = .2;
             L.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void L_MouseEnter(object sender, MouseEventArgs e)
         {
             L.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void L_MouseLeave(object sender, MouseEventArgs e)
         {
             L.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void M_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('M');
-            M.Opacity = .3;
+            M.Opacity = .2;
             M.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void M_MouseEnter(object sender, MouseEventArgs e)
         {
             M.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void M_MouseLeave(object sender, MouseEventArgs e)
         {
             M.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void N_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('N');
-            N.Opacity = .3;
+            N.Opacity = .2;
             N.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void N_MouseEnter(object sender, MouseEventArgs e)
         {
             N.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void N_MouseLeave(object sender, MouseEventArgs e)
         {
             N.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void O_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('O');
-            O.Opacity = .3;
+            O.Opacity = .2;
             O.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void O_MouseEnter(object sender, MouseEventArgs e)
         {
             O.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void O_MouseLeave(object sender, MouseEventArgs e)
         {
             O.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void P_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('P');
-            P.Opacity = .3;
+            P.Opacity = .2;
             P.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void P_MouseEnter(object sender, MouseEventArgs e)
         {
             P.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void P_MouseLeave(object sender, MouseEventArgs e)
         {
            P.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Q_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('Q');
-            Q.Opacity = .3;
+            Q.Opacity = .2;
             Q.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Q_MouseEnter(object sender, MouseEventArgs e)
         {
             Q.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void Q_MouseLeave(object sender, MouseEventArgs e)
         {
             Q.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void R_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('R');
-            R.Opacity = .3;
+            R.Opacity = .2;
             R.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void R_MouseEnter(object sender, MouseEventArgs e)
         {
             R.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void R_MouseLeave(object sender, MouseEventArgs e)
         {
             R.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void S_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('S');
-            S.Opacity = .3;
+            S.Opacity = .2;
             S.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void S_MouseEnter(object sender, MouseEventArgs e)
         {
             S.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void S_MouseLeave(object sender, MouseEventArgs e)
         {
             S.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void T_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('T');
-            T.Opacity = .3;
+            T.Opacity = .2;
             T.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void T_MouseEnter(object sender, MouseEventArgs e)
         {
             T.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void T_MouseLeave(object sender, MouseEventArgs e)
         {
             T.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void U_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('U');
-            U.Opacity = .3;
+            U.Opacity = .2;
             U.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void U_MouseEnter(object sender, MouseEventArgs e)
         {
             U.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void U_MouseLeave(object sender, MouseEventArgs e)
         {
             U.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void V_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('V');
-            V.Opacity = .3;
+            V.Opacity = .2;
             V.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void V_MouseEnter(object sender, MouseEventArgs e)
         {
             V.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void V_MouseLeave(object sender, MouseEventArgs e)
         {
             V.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void W_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('W');
-            W.Opacity = .3;
+            W.Opacity = .2;
             W.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void W_MouseEnter(object sender, MouseEventArgs e)
         {
             W.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void W_MouseLeave(object sender, MouseEventArgs e)
         {
             W.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void X_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('X');
-            X.Opacity = .3;
+            X.Opacity = .2;
             X.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void X_MouseEnter(object sender, MouseEventArgs e)
         {
             X.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void X_MouseLeave(object sender, MouseEventArgs e)
         {
             X.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Y_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('Y');
-            Y.Opacity = .3;
+            Y.Opacity = .2;
             Y.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Y_MouseEnter(object sender, MouseEventArgs e)
         {
             Y.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void Y_MouseLeave(object sender, MouseEventArgs e)
         {
             Y.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Z_Click(object sender, RoutedEventArgs e)
         {
             AlphabetCheck('Z');
-            Z.Opacity = .3;
+            Z.Opacity = .2;
             Z.IsEnabled = false;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void Z_MouseEnter(object sender, MouseEventArgs e)
         {
             Z.Foreground = Brushes.Crimson;
+            Mouse.OverrideCursor = Cursors.Hand;
         }
 
         private void Z_MouseLeave(object sender, MouseEventArgs e)
         {
             Z.Foreground = Brushes.Black;
+            Mouse.OverrideCursor = Cursors.Arrow;
         }
 
         private void AlphabetCheck(char alpha)
         {
             int count = 0;
-            int temp = 0;
             char[] array = Word.ToCharArray();
             foreach(char a in array)
             {
